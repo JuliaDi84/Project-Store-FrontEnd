@@ -1,0 +1,45 @@
+<mat-drawer-container class="page-container" autosize>
+  <mat-drawer #drawer class="page-sidenav" mode="side">
+    <img class="app-logo" [src]="logo"/>
+
+    <p class="app-name">{{ title | uppercase }}</p>
+
+    <div class="div-menu">
+      <mat-card *ngFor="let item of items" (click)="onChangePage(item)">
+        <mat-card-content class="item-menu-title">{{ item.title | uppercase }}</mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-content class="item-menu-title">{{ owner | titlecase }}</mat-card-content>
+      </mat-card>
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar style ="background: darkcyan; color: #ed7513 ">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span  style='font-family: "Lucida Handwriting", cursive; font-size: xx-large'>{{ title}}</span>
+    <span class="button-spacer"></span>
+
+    <app-cart-button></app-cart-button>
+
+    <button mat-icon-button (click)="onLogout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="div-banner">
+    <img class="img-banner" [src]="imageBanner"/>
+
+  </div>
+  <span  style='font-family: "Lucida Handwriting", cursive; font-size: xx-large'>
+  <p class="about-us">
+    I'm Julia, the creative mind behind this online haven for handmade lovers.<br><br> From modern bags to cozy scarves, and trendy beanies to warm cardigans, <br><br> our store is a celebration of the timeless art of crochet.
+
+    With a passion for yarn <br><br> and a hook in hand, I've embarked on a journey to bring both  traditional <br><br> techniques and contemporary designs back where they belong, "walking"  down<br><br>  the street, or simply making homes feel like home. Each piece in our  store  is a labor <br><br>of love, meticulously crafted to bring warmth, beauty,  and a touch of handmade charm to <br><br> your life.</p>
+  </span>
+
+  <app-list-items [showAdmin]="false"></app-list-items>
+
+</mat-drawer-container>
