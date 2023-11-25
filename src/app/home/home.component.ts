@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {environment} from "../../environments/environment";
 import {Router} from "@angular/router";
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,10 +18,7 @@ export class HomeComponent {
       title: 'Home',
       route: '/home',
     },
-    {
-      title: 'About Us',
-      route: '/about_us',
-    },
+
     {
       title: 'Admin',
       route: '/dashboard',
@@ -31,7 +29,7 @@ export class HomeComponent {
     },
   ];
 
-  imageBanner: string = 'assets/banner.png' ;
+  imageBanner: string = 'assets/banner.jpg' ;
   // imageSalesMiddle: string = 'assets/sales_middle.jpeg';
   // imageSalesRight: string = 'assets/sales_right.jpg';
 

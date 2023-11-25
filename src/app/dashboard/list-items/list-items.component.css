@@ -1,18 +1,21 @@
+
+/*home items card*/
 .item-card {
-  background-color: white;
+  background-color: whitesmoke;
   display: flex; /* unnecesary, only the container needs to be flex */
   /* unless this is another flex container */
   flex-direction: column; /* also unnecesary unless it's for purposes not shown in the example */
   min-width: 500px;
   margin: 10px;
   height: 250px;
+  box-shadow: #2d545e;
 }
 
 .lbl-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 16px;
-  color: darkcyan;
+  color: #2d545e;
 }
 
 .div-buttons {
@@ -26,12 +29,13 @@
 
 .div-row {
   display: flex;
-  flex: 1; /* unnecesary */
+  flex: 4; /* unnecesary */
   flex-wrap: wrap;
 }
 
 .img-preview {
   margin-left: auto;
   margin-right: 0px;
+  position: page;
   height: 100px;
 }

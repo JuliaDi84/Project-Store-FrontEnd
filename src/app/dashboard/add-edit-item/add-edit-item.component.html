@@ -19,7 +19,7 @@
         <div class="input-container">
           <mat-form-field appearance="fill" class="input-field">
             <mat-label>Price</mat-label>
-            <input matInput placeholder="20 RON" [formControl]="price" required>
+            <input matInput placeholder="100 RON" [formControl]="price" required>
             <mat-error *ngIf="price.invalid">{{getErrorMessage(price)}}</mat-error>
           </mat-form-field>
         </div>
@@ -53,7 +53,7 @@
           </mat-form-field>
         </div>
         <div class="div-buttons-container">
-          <button mat-raised-button style ="background: darkcyan; color: papayawhip" (click)="onSave()">{{id == "" ? "Create" : "Update"}}</button>
+          <button mat-raised-button style ="background: #2d545e; color: whitesmoke" (click)="onSave()">{{id == "" ? "Create" : "Update"}}</button>
         </div>
       </mat-card-content>
     </mat-card>

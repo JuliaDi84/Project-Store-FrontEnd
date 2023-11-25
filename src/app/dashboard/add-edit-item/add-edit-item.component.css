@@ -1,5 +1,5 @@
 .item-card-container {
-  width: 400px;
+  width: 300px;
 }
 
 .div-parent {
@@ -16,7 +16,6 @@
 .div-image-row {
   display: flex;
 }
-
 .img-item {
   margin-top: auto;
   margin-bottom: auto;

@@ -7,7 +7,10 @@
 }
 
 .page-container {
-  height: 100%;
+  color: darkcyan;
+  height: 750px;
+  align-items:center;
+  justify-content:center;
 }
 
 .app-logo {
@@ -20,21 +23,24 @@
 .app-name {
   font-size: 20px;
   color: #ed7513;
-  font-style: oblique;
-  font-family: "Lucida Handwriting", cursive;
+  font-style: normal;
+  font-family: "Glass Antiqua", serif;
   text-align: center;
 }
 
 .div-menu {
   margin-top: 50px;
+  margin-inline: 50px;
+
 }
 
 .item-menu-title {
   font-size: 16px;
   color: #ed7513;
   font-style: normal;
-  font-family: "sans-serif", inherit;
+  font-family: "Glass Antiqua", serif;
   text-align: center;
+
 }
 
 .div-banner {
@@ -52,20 +58,30 @@ p{
 }
 
 .img-banner {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2%;
+  margin-right: 2%;
   width: 100%;
   height: 400px;
 }
 .about-us{
   font-size: 1.0rem;
-  color: darkcyan;
-  background-color:whitesmoke;
+  color: #2d545e;
+  background-color: whitesmoke;
   margin: 0rem 0;
-  padding: 0.5rem;
-  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
 
 }
+.about-loops{
+  font-size: 1.0rem;
+  color: #2d545e;
+  background-color: whitesmoke;
+  text-align: justify;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
 
 
 

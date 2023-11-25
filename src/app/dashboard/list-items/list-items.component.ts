@@ -14,12 +14,12 @@ export class ListItemsComponent {
 
   itemsList: Array<Item> = [];
 
-  constructor(private movieService: ItemService, private cartService: CartService) {
+  constructor(private itemService: ItemService, private cartService: CartService) {
 
   }
 
   ngOnInit() {
-    this.movieService.getItemList().subscribe((itemsList: Array<Item>) => {
+    this.itemService.getItemList().subscribe((itemsList: Array<Item>) => {
       this.itemsList = itemsList;
     });
   }
@@ -27,8 +27,8 @@ export class ListItemsComponent {
 
   onDelete(item: Item): void {
     console.log(item);
-    // movie.id! => ! ii spune compilatorului ca proprietatea "id" este diferita de null.
-    this.movieService.deleteItem(item.id!);
+    // .id! => ! ii spune compilatorului ca proprietatea "id" este diferita de null.
+    this.itemService.deleteItem(item.id!);
   }
 
   onEdit(item: Item): void {

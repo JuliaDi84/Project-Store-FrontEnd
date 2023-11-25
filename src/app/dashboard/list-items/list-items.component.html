@@ -2,26 +2,25 @@
   <div class="div-row">
     <mat-card *ngFor="let item of itemsList" class="item-card">
       <mat-card-content>
-        <div style="display: flex">
+        <div style="display: flex; justify-content: center" >
           <div>
-            <p>Title: <span class="lbl-title">{{item.title | titlecase}}</span></p>
-            <p>Description: {{item.description}}</p>
-            <p>Price: {{item.price}} RON</p>
-            <p>Category: {{item.category}}</p>
+            <p> <span class="lbl-title">{{item.title | titlecase}}</span></p>
+            <p> {{item.description}}</p>
+            <p> {{item.price}} RON</p>
+<!--            <p>Category: {{item.category}}</p>-->
             <p>Size: {{item.size}}</p>
           </div>
-
-          <img [src]="item.imageUrl" class="img-preview"/>
+          <img [src]="item.imageUrl" class="img-preview" />
         </div>
 
         <div class="div-buttons" *ngIf="showAdmin">
-          <button mat-raised-button style ="background: crimson; color: papayawhip" (click)="onEdit(item)">Edit</button>
+          <button mat-raised-button style ="background: #2d545e; color: #e1b382 " (click)="onEdit(item)">Edit</button>
           <div class="div-spacer"></div>
-          <button mat-raised-button style ="background: darkred; color: papayawhip" (click)="onDelete(item)">Delete</button>
+          <button mat-raised-button style ="background: #2d545e; color: #e1b382" (click)="onDelete(item)">Delete</button>
         </div>
         <div class="div-spacer"></div>
         <div class="div-buttons">
-          <button mat-raised-button style ="background: darkcyan; color: papayawhip" (click)="onAddToCart(item)">Add to cart</button>
+          <button mat-raised-button style ="background: #2d545e;  color: #e1b382" (click)="onAddToCart(item)">Add to cart</button>
         </div>
       </mat-card-content>
     </mat-card>
