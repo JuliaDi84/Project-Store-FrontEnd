@@ -20,7 +20,7 @@ export class HomeComponent {
     },
 
     {
-      title: 'Admin',
+      title: 'Dashboard',
       route: '/dashboard',
     },
     {
@@ -29,7 +29,7 @@ export class HomeComponent {
     },
   ];
 
-  imageBanner: string = 'assets/banner.jpg' ;
+  imageBanner: string = 'assets/Loops1.png' ;
   // imageSalesMiddle: string = 'assets/sales_middle.jpeg';
   // imageSalesRight: string = 'assets/sales_right.jpg';
 

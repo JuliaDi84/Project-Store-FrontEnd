@@ -22,7 +22,7 @@ export class DashboardComponent {
       route: '/home',
     },
     {
-      title: 'Admin',
+      title: 'Dashboard',
       route: '/dashboard',
     },
     {

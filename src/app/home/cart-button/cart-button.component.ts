@@ -4,6 +4,7 @@ import {CartDialogComponent} from "../cart-dialog/cart-dialog.component";
 import {CartService} from "../../services/cart.service";
 
 @Component({
+
   selector: 'app-cart-button',
   templateUrl: './cart-button.component.html',
   styleUrls: ['./cart-button.component.css']

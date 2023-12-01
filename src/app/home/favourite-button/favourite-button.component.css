@@ -1,0 +1,20 @@
+.add-favourite {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+/*.mdc-icon-button material-icons{*/
+/*  display: flex;*/
+/*  margin-left: auto;*/
+
+/*}*/
+
+.badge {
+  background-color: mediumvioletred; /* Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  border-radius: 50%;
+  padding: 2px 6px;
+  position: relative;
+  top: -15px;
+  left: -8px;
+  font-size: 14px;
+}
+

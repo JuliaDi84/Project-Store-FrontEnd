@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Item} from "../../models/Item";
 import {ItemService} from "../../services/item.service";
 import {CartService} from "../../services/cart.service";
+import {FavouriteService} from "../../services/favourite.service";
 
 @Component({
   selector: 'app-list-items',
@@ -14,7 +15,7 @@ export class ListItemsComponent {
 
   itemsList: Array<Item> = [];
 
-  constructor(private itemService: ItemService, private cartService: CartService) {
+  constructor(private itemService: ItemService, private cartService: CartService, private favouriteService: FavouriteService) {
 
   }
 
@@ -42,4 +43,10 @@ export class ListItemsComponent {
     console.log(item)
     this.cartService.addToCart(item);
   }
+  onAddToFavourites(item: Item): void {
+    console.log("item was added to favourites")
+    console.log(item)
+    this.favouriteService.onAddToFavourites(item);
+  }
+
 }

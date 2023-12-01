@@ -1,5 +1,7 @@
+
+
 <div style="width: 100vw">
-  <div class="div-row">
+<div class="div-row">
     <mat-card *ngFor="let item of itemsList" class="item-card">
       <mat-card-content>
         <div style="display: flex; justify-content: center" >
@@ -10,7 +12,7 @@
 <!--            <p>Category: {{item.category}}</p>-->
             <p>Size: {{item.size}}</p>
           </div>
-          <img [src]="item.imageUrl" class="img-preview" />
+          <img [src]="item.imageUrl" class="img-preview"  />
         </div>
 
         <div class="div-buttons" *ngIf="showAdmin">
@@ -21,10 +23,15 @@
         <div class="div-spacer"></div>
         <div class="div-buttons">
           <button mat-raised-button style ="background: #2d545e;  color: #e1b382" (click)="onAddToCart(item)">Add to cart</button>
+          <div class="div-spacer"></div>
+          <button mat-raised-button  style ="background: #2d545e;  color: #e1b382" (click)="onAddToFavourites(item)">
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
+
       </mat-card-content>
     </mat-card>
 
   </div>
-
 </div>
+

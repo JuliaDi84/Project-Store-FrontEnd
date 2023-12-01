@@ -22,45 +22,49 @@ import {HomeComponent} from './home/home.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
-import { CartButtonComponent } from './home/cart-button/cart-button.component';
-import { CartDialogComponent } from './home/cart-dialog/cart-dialog.component';
+import {CartButtonComponent} from './home/cart-button/cart-button.component';
+import {CartDialogComponent} from './home/cart-dialog/cart-dialog.component';
+import {FavouriteButtonComponent} from './home/favourite-button/favourite-button.component';
+import {FavouriteDialogComponent} from './home/favourite-dialog/favourite-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
-import { ListCartsComponent } from './dashboard/list-carts/list-carts.component';
+import {ListCartsComponent} from './dashboard/list-carts/list-carts.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AuthComponent,
-    DashboardComponent,
-    AddEditItemComponent,
-    ListItemsComponent,
-    AddEditUserComponent,
-    ListUsersComponent,
-    HomeComponent,
-    CartButtonComponent,
-    CartDialogComponent,
-    ListCartsComponent,
+    declarations: [
+        AppComponent,
+        AuthComponent,
+        DashboardComponent,
+        AddEditItemComponent,
+        ListItemsComponent,
+        AddEditUserComponent,
+        ListUsersComponent,
+        HomeComponent,
+        CartButtonComponent,
+        CartDialogComponent,
+        FavouriteButtonComponent,
+        FavouriteDialogComponent,
+        ListCartsComponent,
 
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    RouterOutlet,
-    AppRoutingModule,
-    HttpClientModule,
-    MatSelectModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatDialogModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        RouterOutlet,
+        AppRoutingModule,
+        HttpClientModule,
+        MatSelectModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatDialogModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

@@ -1,18 +1,20 @@
 
 /*home items card*/
 .item-card {
-  background-color: whitesmoke;
+  background-color: white;
   display: flex; /* unnecesary, only the container needs to be flex */
-  /* unless this is another flex container */
+  /*!* unless this is another flex container *!*/
   flex-direction: column; /* also unnecesary unless it's for purposes not shown in the example */
-  min-width: 500px;
+  word-wrap: normal;
+  min-width: 400px;
+  max-width: 400px;
   margin: 10px;
   height: 250px;
-  box-shadow: #2d545e;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .lbl-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom: 16px;
   color: #2d545e;
